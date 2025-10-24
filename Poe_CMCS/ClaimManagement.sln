@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimManagement", "ClaimManagement.csproj", "{1959ABB3-4186-4368-B8C0-B9708FD92D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimManagement.Tests", "..\ClaimManagement.Tests\ClaimManagement.Tests.csproj", "{8CE1968D-57FF-411A-9D5C-DCAF8CD88118}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1959ABB3-4186-4368-B8C0-B9708FD92D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1959ABB3-4186-4368-B8C0-B9708FD92D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1959ABB3-4186-4368-B8C0-B9708FD92D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1959ABB3-4186-4368-B8C0-B9708FD92D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE1968D-57FF-411A-9D5C-DCAF8CD88118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE1968D-57FF-411A-9D5C-DCAF8CD88118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE1968D-57FF-411A-9D5C-DCAF8CD88118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE1968D-57FF-411A-9D5C-DCAF8CD88118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63E3E477-8C5E-4E56-8EFE-E90ADABCE8AD}
+	EndGlobalSection
+EndGlobal

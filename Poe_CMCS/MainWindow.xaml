@@ -1,0 +1,9 @@
+﻿<Window x:Class="ClaimManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Window" Height="350" Width="525">
+    <Grid>
+        <Button Content="Lecturer Dashboard" Width="200" Height="50" Click="LecturerDashboard_Click"/>
+        <Button Content="Claims History" Width="200" Height="50" Margin="0,60,0,0" Click="ClaimsHistory_Click"/>
+    </Grid>
+</Window>

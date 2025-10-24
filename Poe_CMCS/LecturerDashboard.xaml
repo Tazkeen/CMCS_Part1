@@ -1,0 +1,54 @@
+﻿<Window x:Class="ClaimManagement.LecturerDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lecturer Dashboard" Height="550" Width="600">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock FontSize="20" FontWeight="Bold">Submit Monthly Claims</TextBlock>
+
+            <!-- Input for Name -->
+            <TextBlock Margin="10,10,0,0">Name</TextBlock>
+            <TextBox Name="nameTextBox" Width="300"/>
+
+            <!-- Input for Surname -->
+            <TextBlock Margin="10,10,0,0">Surname</TextBlock>
+            <TextBox Name="surnameTextBox" Width="300"/>
+
+            <!-- Input for Hours Worked -->
+            <TextBlock Margin="10,10,0,0">Hours Worked</TextBlock>
+            <TextBox Name="hoursWorkedTextBox" Width="300"/>
+
+            <!-- Input for Hourly Rate -->
+            <TextBlock Margin="10,10,0,0">Hourly Rate</TextBlock>
+            <TextBox Name="hourlyRateTextBox" Width="300"/>
+
+            <!-- Additional Notes -->
+            <TextBlock Margin="10,10,0,0">Additional Notes</TextBlock>
+            <TextBox Name="notesTextBox" Width="300" Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+            <!-- Upload Supporting Document -->
+            <TextBlock Margin="10,10,0,0">Upload Supporting Document</TextBlock>
+            <Button Content="Upload" Width="100" Height="30" Click="Upload_Click"/>
+            <TextBlock Name="uploadedFileNameTextBlock" FontStyle="Italic" Margin="5,5,0,0"/>
+
+            <!-- Submit Button -->
+            <Button Content="Submit Claim" Width="150" Height="40" Margin="10" Click="SubmitClaim_Click" Background="LightBlue" Foreground="White"/>
+
+            <!-- Back Button -->
+            <Button Content="Back" Width="100" Height="30" Margin="5" Click="BackButton_Click"/>
+
+            <!-- Claims DataGrid -->
+            <TextBlock FontSize="16" Margin="20,10,0,0">Submitted Claims</TextBlock>
+            <DataGrid Name="claimsDataGrid" AutoGenerateColumns="False" Height="200" CanUserAddRows="False" ItemsSource="{Binding ClaimList}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Claim ID" Binding="{Binding ClaimID}" Width="100"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding FirstName}" Width="100"/>
+                    <DataGridTextColumn Header="Surname" Binding="{Binding Surname}" Width="100"/>
+                    <DataGridTextColumn Header="Hours" Binding="{Binding HoursWorked}" Width="100"/>
+                    <DataGridTextColumn Header="Rate" Binding="{Binding HourlyRate}" Width="100"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
